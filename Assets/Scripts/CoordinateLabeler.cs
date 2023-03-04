@@ -8,7 +8,7 @@ using System;
 public class CoordinateLabeler : MonoBehaviour
 {
     TextMeshPro label;
-    Vector2Int coordinate = new Vector2Int();
+    Vector2Int coordinate ;
 
     public void Awake()
     {
