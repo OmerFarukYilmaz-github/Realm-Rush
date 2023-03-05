@@ -28,8 +28,8 @@ public class CoordinateLabeler : MonoBehaviour
         ColorDebug();
         ToggleLabels();
 
-        if (Application.isPlaying) { return; } // oynarken calismasin sadece editorde calissin
-
+        if (Application.isPlaying) {  return; } // oynarken calismasin sadece editorde calissin
+        label.enabled = true;
         DisplayCoordinates();
 
         UpdateObjectName();
