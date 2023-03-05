@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2491229849102915039, guid: be12451971810fe43be04eff4073729f, type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2616948002810447447, guid: be12451971810fe43be04eff4073729f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -81,7 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8064372981393929467, guid: be12451971810fe43be04eff4073729f, type: 3}
       propertyPath: m_Name
-      value: Tile 3,3
+      value: Tile_Road_Horizontal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be12451971810fe43be04eff4073729f, type: 3}

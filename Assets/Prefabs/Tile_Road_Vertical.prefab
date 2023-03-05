@@ -55,6 +55,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3380110880684692530, guid: fcaa64a93d3178b4fab691abf77adf14, type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3563421190501979009, guid: fcaa64a93d3178b4fab691abf77adf14, type: 3}
       propertyPath: m_text
       value: 0,0
@@ -65,7 +69,7 @@ PrefabInstance:
       objectReference: {fileID: -2432090755550338912, guid: e618ab8e55a3ed942a408f4d1b7f896e, type: 3}
     - target: {fileID: 7174331828142863638, guid: fcaa64a93d3178b4fab691abf77adf14, type: 3}
       propertyPath: m_Name
-      value: Tile 0,0
+      value: Tile_Road_Vertical
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcaa64a93d3178b4fab691abf77adf14, type: 3}

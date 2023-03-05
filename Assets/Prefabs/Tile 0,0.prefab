@@ -101,7 +101,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2,4
+  m_text: 0,0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -278,6 +278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2894535696811984826}
   - component: {fileID: 3380110880684692530}
+  - component: {fileID: 9082520090074054837}
   m_Layer: 0
   m_Name: Tile 0,0
   m_TagString: Untagged
@@ -314,3 +315,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd70970442f33fc4d849b6c9795e7176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlaceable: 1
+  tower: {fileID: 4136690693718148593, guid: 7b360c2f04d78ab4eac21c03f35d02db, type: 3}
+--- !u!65 &9082520090074054837
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7174331828142863638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 1, z: 10}
+  m_Center: {x: 0, y: -0.5, z: 0}

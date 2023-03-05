@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Waypoint : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] bool isPlaceable;
+    [SerializeField] GameObject tower;
 
-    // Update is called once per frame
-    void Update()
+    public void OnMouseDown()
     {
-        
+        if (isPlaceable)
+        {
+            Debug.Log(transform.name);
+            Instantiate(tower,transform.position, transform.rotation);
+            isPlaceable = false;
+        }
     }
 }
