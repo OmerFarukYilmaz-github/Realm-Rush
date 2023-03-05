@@ -88,7 +88,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712183497824757835}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
   m_Name: 
@@ -185,6 +185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d68dfd01f5fae24c8a6588659d13e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  blockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!1 &3842231911042696990
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,8 +279,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2894535696811984826}
-  - component: {fileID: 3380110880684692530}
   - component: {fileID: 9082520090074054837}
+  - component: {fileID: 5583138307569204845}
   m_Layer: 0
   m_Name: Tile 0,0
   m_TagString: Untagged
@@ -303,20 +305,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3380110880684692530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7174331828142863638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd70970442f33fc4d849b6c9795e7176, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlaceable: 1
-  tower: {fileID: 4136690693718148593, guid: 7b360c2f04d78ab4eac21c03f35d02db, type: 3}
 --- !u!65 &9082520090074054837
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -330,3 +318,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 1, z: 10}
   m_Center: {x: 0, y: -0.5, z: 0}
+--- !u!114 &5583138307569204845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7174331828142863638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd70970442f33fc4d849b6c9795e7176, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlaceable: 1
+  tower: {fileID: 8400273936193349841, guid: 7b360c2f04d78ab4eac21c03f35d02db, type: 3}

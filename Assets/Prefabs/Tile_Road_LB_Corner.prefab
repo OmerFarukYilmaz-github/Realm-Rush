@@ -63,6 +63,22 @@ PrefabInstance:
       propertyPath: m_text
       value: 0,0
       objectReference: {fileID: 0}
+    - target: {fileID: 3563421190501979009, guid: fcaa64a93d3178b4fab691abf77adf14, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3563421190501979009, guid: fcaa64a93d3178b4fab691abf77adf14, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3563421190501979009, guid: fcaa64a93d3178b4fab691abf77adf14, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5583138307569204845, guid: fcaa64a93d3178b4fab691abf77adf14, type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7148155658173607279, guid: fcaa64a93d3178b4fab691abf77adf14, type: 3}
       propertyPath: m_Mesh
       value: 
