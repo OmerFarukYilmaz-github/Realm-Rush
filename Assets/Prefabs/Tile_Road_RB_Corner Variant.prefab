@@ -13,7 +13,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 617238985983804876, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 617238985983804876, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 617238985983804876, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 617238985983804876, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29,15 +29,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 617238985983804876, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 617238985983804876, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 617238985983804876, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 617238985983804876, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -51,9 +51,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1281410185927365111, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
+      propertyPath: m_text
+      value: 2,1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281410185927365111, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281410185927365111, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281410185927365111, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281410185927365111, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4840230223755032416, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
       propertyPath: m_Name
-      value: Tile_Road_RB_Corner Variant
+      value: Tile 2,1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4840230223755032416, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7737146337077761619, guid: 515dea47a7f03454e95a011833b83d48, type: 3}
       propertyPath: m_LocalRotation.w

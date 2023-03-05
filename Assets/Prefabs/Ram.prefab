@@ -47,15 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4228efede2a74ad4380d85103638939e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  path: []
   moveSpeed: 1
 --- !u!65 &8534960995130942296
 BoxCollider:

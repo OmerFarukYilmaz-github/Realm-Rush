@@ -5,6 +5,8 @@ using UnityEngine;
 public class Waypoint : MonoBehaviour
 {
     [SerializeField] bool isPlaceable;
+    public bool IsPlaceable() { return isPlaceable;}
+
     [SerializeField] GameObject tower;
 
     public void OnMouseDown()

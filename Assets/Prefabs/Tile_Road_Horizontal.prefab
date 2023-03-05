@@ -21,7 +21,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2616948002810447447, guid: be12451971810fe43be04eff4073729f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2616948002810447447, guid: be12451971810fe43be04eff4073729f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -29,7 +29,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2616948002810447447, guid: be12451971810fe43be04eff4073729f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2616948002810447447, guid: be12451971810fe43be04eff4073729f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -61,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4398292835497775724, guid: be12451971810fe43be04eff4073729f, type: 3}
       propertyPath: m_text
-      value: 3,3
+      value: 1,1
       objectReference: {fileID: 0}
     - target: {fileID: 5160639567698925000, guid: be12451971810fe43be04eff4073729f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -85,7 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8064372981393929467, guid: be12451971810fe43be04eff4073729f, type: 3}
       propertyPath: m_Name
-      value: Tile_Road_Horizontal
+      value: Tile 1,1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be12451971810fe43be04eff4073729f, type: 3}
