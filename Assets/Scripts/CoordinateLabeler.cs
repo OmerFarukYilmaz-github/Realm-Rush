@@ -1,69 +1,88 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using System;
 
-[ExecuteAlways] //Editor sirasinda da calisacak
+[ExecuteAlways]
+[RequireComponent(typeof(TextMeshPro))]
 public class CoordinateLabeler : MonoBehaviour
 {
     [SerializeField] Color defaultColor = Color.white;
     [SerializeField] Color blockedColor = Color.gray;
+    [SerializeField] Color exploredColor = Color.yellow;
+    [SerializeField] Color pathColor = new Color(1f, 0.5f, 0f);
 
     TextMeshPro label;
-    Vector2Int coordinate ;
-    Waypoint waypoint;
+    Vector2Int coordinates = new Vector2Int();
+    GridManager gridManager;
 
-    public void Awake()
-    {
+    void Awake() {
+        gridManager = FindObjectOfType<GridManager>();
         label = GetComponent<TextMeshPro>();
         label.enabled = false;
-        DisplayCoordinates();
-        waypoint = GetComponentInParent<Waypoint>();
-    }
 
+        DisplayCoordinates();
+    }
 
     void Update()
     {
-        ColorDebug();
-        ToggleLabels();
+       if(!Application.isPlaying)
+       {
+           DisplayCoordinates();
+           UpdateObjectName();
+           label.enabled = true;
+       }
 
-        if (Application.isPlaying) {  return; } // oynarken calismasin sadece editorde calissin
-        label.enabled = true;
-        DisplayCoordinates();
-
-        UpdateObjectName();
+       SetLabelColor();
+       ToggleLabels();
     }
+
     void ToggleLabels()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        if(Input.GetKeyDown(KeyCode.S))
         {
             label.enabled = !label.IsActive();
         }
     }
 
-    private void ColorDebug()
+    void SetLabelColor()
     {
-        if (waypoint.IsPlaceable())
-        {
-            label.color = defaultColor;
-        }
-        else
+        if(gridManager == null) { return; }
+
+        Node node = gridManager.GetNode(coordinates);
+
+        if(node == null) { return; }
+
+        if(!node.isWalkable)
         {
             label.color = blockedColor;
         }
+        else if(node.isPath)
+        {
+            label.color = pathColor;
+        }
+        else if(node.isExplored)
+        {
+            label.color = exploredColor;
+        }
+        else
+        {
+            label.color = defaultColor;
+        }
     }
 
-    private void UpdateObjectName()
+    void DisplayCoordinates() 
     {
-        transform.parent.name = "Tile "+label.text;
+        if(gridManager == null) { return; }
+
+        coordinates.x = Mathf.RoundToInt(transform.parent.position.x / gridManager.UnityGridSize);
+        coordinates.y = Mathf.RoundToInt(transform.parent.position.z / gridManager.UnityGridSize);
+
+        label.text = coordinates.x + "," + coordinates.y;
     }
 
-    private void DisplayCoordinates()
+    void UpdateObjectName()
     {
-        coordinate.x = Mathf.RoundToInt(transform.parent.position.x / UnityEditor.EditorSnapSettings.move.x);
-        coordinate.y = Mathf.RoundToInt(transform.parent.position.z / UnityEditor.EditorSnapSettings.move.z);// ustten baktigimiz icin y yerine z kullanicaz 
-        label.text = $"{coordinate.x},{coordinate.y}";    
-    
+        transform.parent.name = coordinates.ToString();
     }
 }
